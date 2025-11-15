@@ -8,9 +8,40 @@ The code used in this exercise is based on [Chapter 7 of the book "Learning Scie
 
 ## Description
 
+This code solves the diffusion equation over a two dimensional square domain which is at a certain temperature, and a circular disc at its center which is at a higher temperature. The diffusion equation is solved using the [finite-difference](https://en.wikipedia.org/wiki/Finite_difference_method) method. The thermal diffusivity and initial conditions of the system can be changed by the user. The code produces four plots at various timepoints of the simulation. The diffusion process can be clearly observed in these plots.
+
 ## Installing the package
+
+To install the package, run
+
+```bash
+pip install \
+--index-url https://test.pypi.org/simple/ \
+--extra-index-url https://pypi.org/simple \
+grafml_diffusion2d
+```
 
 ## Running this package
 
+To use this package in your Python code, use
+
+```python
+from grafml_diffusion2d.diffusion2d import solve
+```
+
+and then access
+
+```python
+solve()
+```
+
+with the parameters of our choice. Alternatively, you can run this code directly in your terminal by entering
+
+```bash
+grafml-diffusion2d-solve
+```
+
 ## Citing
+
+If you use this package, please cite the authors.
 

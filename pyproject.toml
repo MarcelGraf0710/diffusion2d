@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=41"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grafml_diffusion2d"
+version = "0.0.2"
+authors = [
+    {name = "Ishaan Desai"}, {name = "Marcel Graf"}
+]
+description = "2D thermal diffusion solver"
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = ["diffusion", "thermal"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy", "matplotlib"
+]
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/Simulation-Software-Engineering/diffusion2d"
+
+[project.scripts]
+grafml-diffusion2d-solve = "grafml_diffusion2d.diffusion2d:solve"
